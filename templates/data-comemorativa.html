@@ -8,97 +8,176 @@
 <body>
 
 <!-- =========================================================
-     SLIDE 1 — CAPA (logo full-bleed + overlay branco + texto)
+     SLIDE 1 — CAPA
      ========================================================= -->
 <section class="slide cover" data-slide="1">
-  <div class="cover-logo-wrap">
-    <img src="../brand/logo.png" alt="S.A.T.E." />
+  <div class="blob top-right"></div>
+  <div class="blob bottom-left"></div>
+
+  <div class="topbar">
+    <img class="logo" src="../brand/logo.png" alt="S.A.T.E." />
+    <span class="cat-badge">{{CATEGORY}}</span>
   </div>
-  <div class="cover-text">
+
+  <div class="content">
     <div class="eyebrow">{{EYEBROW}}</div>
     <h1 class="title">{{TITLE}}</h1>
+    <div class="divider"></div>
     <p class="body-text">{{SUBTITLE}}</p>
+  </div>
+
+  <div class="bottomrow">
+    <span class="handle-bottom">@sindicato.satebaurueregiao</span>
+    <span class="swipe-pill">arraste &rarr;</span>
   </div>
 </section>
 
 <!-- =========================================================
-     SLIDE 2 — HISTÓRIA / CONTEXTO
+     SLIDE 2 — CONTEXTO / HISTÓRIA
      ========================================================= -->
 <section class="slide" data-slide="2">
-  <div class="header"></div>
-  <div class="brand-row">
-    <span class="handle">sindicato.satebaurueregiao</span>
-    <span class="swipe">02</span>
+  <div class="blob top-right"></div>
+
+  <div class="topbar">
+    <img class="logo" src="../brand/logo.png" alt="S.A.T.E." />
+    <span class="handle">@sindicato.satebaurueregiao</span>
   </div>
 
   <div class="content">
     <div class="eyebrow">{{S2_EYEBROW}}</div>
-    <h2 class="subtitle">{{S2_TITLE}}</h2>
+    <h2 class="title">{{S2_TITLE}}</h2>
+    <div class="divider"></div>
     <p class="body-text">{{S2_BODY1}}</p>
     <p class="body-text">{{S2_BODY2}}</p>
   </div>
 
-  <div class="footer"></div>
-  <div class="footer-handle">@sindicato.satebaurueregiao</div>
+  <div class="bottomrow">
+    <span class="handle-bottom">@sindicato.satebaurueregiao</span>
+    <span class="sate-badge">S.A.T.E</span>
+  </div>
 </section>
 
 <!-- =========================================================
      SLIDE 3 — NÚMERO / IMPACTO
      ========================================================= -->
 <section class="slide" data-slide="3">
-  <div class="header"></div>
-  <div class="brand-row">
-    <span class="handle">sindicato.satebaurueregiao</span>
-    <span class="swipe">03</span>
+  <div class="blob bottom-left"></div>
+
+  <div class="topbar">
+    <img class="logo" src="../brand/logo.png" alt="S.A.T.E." />
+    <span class="handle">@sindicato.satebaurueregiao</span>
   </div>
 
-  <div class="content" style="text-align:center; align-items:center;">
+  <div class="content" style="margin-top: 120px;">
     <div class="eyebrow">{{S3_EYEBROW}}</div>
     <div class="big-number">{{S3_NUMBER}}</div>
-    <p class="body-text" style="font-size: 38px; text-align:center;">{{S3_BODY}}</p>
+    <p class="body-text" style="font-size: 34px; color: var(--ink); max-width: 900px;">{{S3_BODY}}</p>
   </div>
 
-  <div class="footer"></div>
-  <div class="footer-handle">@sindicato.satebaurueregiao</div>
+  <div class="bottomrow">
+    <span class="handle-bottom">@sindicato.satebaurueregiao</span>
+    <span class="sate-badge">S.A.T.E</span>
+  </div>
 </section>
 
 <!-- =========================================================
-     SLIDE 4 — MENSAGEM / RECONHECIMENTO
+     SLIDE 4 — QUOTE / FRASE FORTE
      ========================================================= -->
 <section class="slide" data-slide="4">
-  <div class="header"></div>
-  <div class="brand-row">
-    <span class="handle">sindicato.satebaurueregiao</span>
-    <span class="swipe">04</span>
+  <div class="blob top-right"></div>
+
+  <div class="topbar">
+    <img class="logo" src="../brand/logo.png" alt="S.A.T.E." />
+    <span class="handle">@sindicato.satebaurueregiao</span>
   </div>
 
-  <div class="content">
+  <div class="content" style="margin-top: 120px;">
     <div class="eyebrow">{{S4_EYEBROW}}</div>
-    <h2 class="subtitle">{{S4_TITLE}}</h2>
-    <p class="body-text">{{S4_BODY}}</p>
+    <h2 class="title" style="font-style: italic;">"{{S4_QUOTE}}"</h2>
+    <div class="divider"></div>
+    <p class="body-text" style="font-weight: 600; color: var(--ink);">{{S4_AUTHOR}}</p>
   </div>
 
-  <div class="footer"></div>
-  <div class="footer-handle">@sindicato.satebaurueregiao</div>
+  <div class="bottomrow">
+    <span class="handle-bottom">@sindicato.satebaurueregiao</span>
+    <span class="sate-badge">S.A.T.E</span>
+  </div>
 </section>
 
 <!-- =========================================================
-     SLIDE 5 — CTA FINAL
+     SLIDE 5 — COMPROMISSO S.A.T.E.
      ========================================================= -->
-<section class="slide cta" data-slide="5">
-  <div class="brand-row">
-    <span class="handle">sindicato.satebaurueregiao</span>
+<section class="slide" data-slide="5">
+  <div class="blob bottom-left"></div>
+
+  <div class="topbar">
+    <img class="logo" src="../brand/logo.png" alt="S.A.T.E." />
+    <span class="handle">@sindicato.satebaurueregiao</span>
   </div>
 
   <div class="content">
     <div class="eyebrow">{{S5_EYEBROW}}</div>
-    <h2 class="subtitle">{{S5_TITLE}}</h2>
+    <h2 class="title">{{S5_TITLE}}</h2>
+    <div class="divider"></div>
     <p class="body-text">{{S5_BODY}}</p>
-    <div class="cta-box">{{S5_CTA}}</div>
   </div>
 
-  <div class="footer"></div>
-  <div class="footer-handle">@sindicato.satebaurueregiao</div>
+  <div class="bottomrow">
+    <span class="handle-bottom">@sindicato.satebaurueregiao</span>
+    <span class="sate-badge">S.A.T.E</span>
+  </div>
+</section>
+
+<!-- =========================================================
+     SLIDE 6 — COMO O SINDICATO AGE / LISTA
+     ========================================================= -->
+<section class="slide" data-slide="6">
+  <div class="blob top-right"></div>
+
+  <div class="topbar">
+    <img class="logo" src="../brand/logo.png" alt="S.A.T.E." />
+    <span class="handle">@sindicato.satebaurueregiao</span>
+  </div>
+
+  <div class="content">
+    <div class="eyebrow">{{S6_EYEBROW}}</div>
+    <h2 class="title">{{S6_TITLE}}</h2>
+    <div class="divider"></div>
+    <p class="body-text">{{S6_ITEM1}}</p>
+    <p class="body-text">{{S6_ITEM2}}</p>
+    <p class="body-text">{{S6_ITEM3}}</p>
+  </div>
+
+  <div class="bottomrow">
+    <span class="handle-bottom">@sindicato.satebaurueregiao</span>
+    <span class="sate-badge">S.A.T.E</span>
+  </div>
+</section>
+
+<!-- =========================================================
+     SLIDE 7 — CTA FINAL
+     ========================================================= -->
+<section class="slide cta" data-slide="7">
+  <div class="blob top-right"></div>
+  <div class="blob bottom-left"></div>
+
+  <div class="topbar">
+    <img class="logo" src="../brand/logo.png" alt="S.A.T.E." />
+    <span class="handle">@sindicato.satebaurueregiao</span>
+  </div>
+
+  <div class="content">
+    <div class="eyebrow">{{S7_EYEBROW}}</div>
+    <h2 class="title">{{S7_TITLE}}</h2>
+    <div class="divider"></div>
+    <p class="body-text">{{S7_BODY}}</p>
+    <div class="cta-pill">{{S7_CTA}} &rarr;</div>
+  </div>
+
+  <div class="bottomrow">
+    <span class="handle-bottom">@sindicato.satebaurueregiao</span>
+    <span class="sate-badge">S.A.T.E</span>
+  </div>
 </section>
 
 </body>

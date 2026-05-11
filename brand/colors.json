@@ -1,21 +1,18 @@
 {
-  "primary": "#015E9F",
-  "secondary": "#029BD3",
-  "accent": "#E9412D",
+  "bg": "#FFFBF8",
+  "accent": "#F47361",
+  "accent_soft": "#FCD5CE",
+  "accent_bg": "rgba(244,115,97,0.12)",
+  "ink": "#1A1A1A",
+  "muted": "#6B6B6B",
   "white": "#FFFFFF",
-  "ink": "#0B2B45",
-  "muted": "#5A7A95",
-  "bg": "#F4F8FB",
-  "usage": {
-    "header_dark": "#015E9F",
-    "header_light": "#029BD3",
-    "footer": "#E9412D",
-    "title": "#015E9F",
-    "body": "#0B2B45",
-    "highlight": "#E9412D"
+  "legacy": {
+    "primary_blue": "#015E9F",
+    "secondary_blue": "#029BD3",
+    "old_red": "#E9412D"
   },
   "fonts": {
-    "display": "Montserrat",
+    "display": "Playfair Display",
     "body": "Inter"
   },
   "handle": "@sindicato.satebaurueregiao",

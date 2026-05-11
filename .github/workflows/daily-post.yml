@@ -1,9 +1,9 @@
 name: Daily Instagram Post
 
 on:
-  schedule:
-    # 12:00 UTC = 09:00 BRT (Brasília, UTC-3)
-    - cron: '0 12 * * *'
+  # PAUSED — cron disabled until image bank arrives. Re-enable by uncommenting below.
+  # schedule:
+  #   - cron: '0 12 * * *'   # 12:00 UTC = 09:00 BRT
   workflow_dispatch:
     inputs:
       date:
