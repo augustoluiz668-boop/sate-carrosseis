@@ -1,0 +1,53 @@
+name: Daily Instagram Post
+
+on:
+  schedule:
+    # 12:00 UTC = 09:00 BRT (Brasília, UTC-3)
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Post date (YYYY-MM-DD). Empty = today.'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Render slides (in case not pre-rendered)
+        run: node scripts/render.js ${{ github.event.inputs.date }}
+
+      - name: Commit rendered PNGs
+        run: |
+          git config user.name "sate-bot"
+          git config user.email "sate-bot@users.noreply.github.com"
+          git add posts/
+          git diff --staged --quiet || git commit -m "render: slides for ${{ github.event.inputs.date || 'today' }}"
+          git push
+
+      - name: Publish to Instagram
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_BUSINESS_ID: ${{ secrets.IG_BUSINESS_ID }}
+          GH_RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
+        run: node scripts/publish.js ${{ github.event.inputs.date }}
+
+      - name: Commit updated meta.json
+        run: |
+          git add posts/
+          git diff --staged --quiet || git commit -m "publish: mark posted [skip ci]"
+          git push

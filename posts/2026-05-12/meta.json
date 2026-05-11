@@ -1,0 +1,30 @@
+{
+  "date": "2026-05-12",
+  "scheduled_at": "2026-05-12T12:00:00Z",
+  "template": "data-comemorativa",
+  "status": "pending",
+  "theme": "Dia Internacional do Enfermeiro",
+  "data": {
+    "EYEBROW": "12 DE MAIO",
+    "TITLE": "Dia <span class='hl'>Internacional</span> do Enfermeiro",
+    "SUBTITLE": "A categoria que sustenta a saúde do Brasil merece reconhecimento todos os dias.",
+
+    "S2_EYEBROW": "POR QUE 12 DE MAIO?",
+    "S2_TITLE": "O legado de Florence Nightingale",
+    "S2_BODY1": "A data marca o nascimento de Florence Nightingale (1820), pioneira da enfermagem moderna e responsável por transformar o cuidado em ciência.",
+    "S2_BODY2": "No Brasil, abre a Semana da Enfermagem (12 a 20/05), encerrada no Dia do Auxiliar e Técnico de Enfermagem.",
+
+    "S3_EYEBROW": "A FORÇA DA CATEGORIA",
+    "S3_NUMBER": "2,9 mi",
+    "S3_BODY": "de profissionais de enfermagem atuam no Brasil — a maior força de trabalho da saúde do país.",
+
+    "S4_EYEBROW": "NOSSO COMPROMISSO",
+    "S4_TITLE": "Você cuida. O S.A.T.E. cuida de você.",
+    "S4_BODY": "Defendemos direitos, pressionamos por melhores condições de trabalho e damos suporte jurídico e social para auxiliares e técnicos de enfermagem de Bauru e Região.",
+
+    "S5_EYEBROW": "PARABÉNS, ENFERMAGEM",
+    "S5_TITLE": "Obrigado por cuidar de tantas vidas.",
+    "S5_BODY": "Hoje é dia de celebrar você. Marque um colega e compartilhe.",
+    "S5_CTA": "Associe-se: sate-bauru.org.br"
+  }
+}

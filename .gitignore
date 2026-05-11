@@ -1,0 +1,8 @@
+node_modules/
+.env
+.env.local
+*.log
+templates/.__render.html
+.DS_Store
+Thumbs.db
+.claude/

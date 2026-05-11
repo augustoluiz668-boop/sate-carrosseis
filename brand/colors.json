@@ -1,0 +1,23 @@
+{
+  "primary": "#015E9F",
+  "secondary": "#029BD3",
+  "accent": "#E9412D",
+  "white": "#FFFFFF",
+  "ink": "#0B2B45",
+  "muted": "#5A7A95",
+  "bg": "#F4F8FB",
+  "usage": {
+    "header_dark": "#015E9F",
+    "header_light": "#029BD3",
+    "footer": "#E9412D",
+    "title": "#015E9F",
+    "body": "#0B2B45",
+    "highlight": "#E9412D"
+  },
+  "fonts": {
+    "display": "Montserrat",
+    "body": "Inter"
+  },
+  "handle": "@sindicato.satebaurueregiao",
+  "url": "https://www.instagram.com/sindicato.satebaurueregiao/"
+}
