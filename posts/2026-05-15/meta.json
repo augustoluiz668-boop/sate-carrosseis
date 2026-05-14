@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-15",
+  "scheduled_at": "2026-05-15T12:00:00Z",
+  "template": "data-comemorativa",
+  "status": "pending",
+  "theme": "Lançamento do Site S.A.T.E.",
+  "data": {
+    "CATEGORY": "NOVIDADE",
+
+    "EYEBROW": "NOVIDADE",
+    "TITLE": "O S.A.T.E. está <em>online.</em>",
+    "SUBTITLE": "Agora você encontra tudo sobre o sindicato em um só lugar — direto do celular ou computador.",
+
+    "S2_EYEBROW": "POR QUE ISSO IMPORTA?",
+    "S2_TITLE": "Seu sindicato <em>mais perto de você.</em>",
+    "S2_BODY1": "Informações, novidades e contato com o S.A.T.E. agora acessíveis 24h, de qualquer lugar.",
+    "S2_BODY2": "Nada de ficar sem resposta. Tudo que você precisa saber sobre o sindicato, reunido em um endereço só.",
+
+    "S3_EYEBROW": "UM ENDEREÇO. UMA COMUNIDADE.",
+    "S3_NUMBER": "2,9 mi",
+    "S3_BODY": "de profissionais de enfermagem no Brasil — e agora o S.A.T.E. tem presença digital para servir melhor a todos.",
+
+    "S4_EYEBROW": "NOSSA MISSÃO DIGITAL",
+    "S4_QUOTE": "Estar perto de quem cuida é nossa responsabilidade — online e offline.",
+    "S4_AUTHOR": "— S.A.T.E. Bauru e Região",
+
+    "S5_EYEBROW": "VOCÊ SABIA?",
+    "S5_TITLE": "Sindicatos digitais <em>atendem mais.</em>",
+    "S5_BODY": "Sindicatos com presença online conseguem informar e responder dúvidas de muito mais associados do que apenas pelo atendimento presencial.",
+
+    "S6_EYEBROW": "O QUE VOCÊ ENCONTRA",
+    "S6_TITLE": "Tudo sobre o S.A.T.E. <em>em um clique.</em>",
+    "S6_ITEM1": "→ Informações sobre o sindicato e nossa história em Bauru e Região.",
+    "S6_ITEM2": "→ Novidades, eventos e comunicados direto da fonte.",
+    "S6_ITEM3": "→ Contato direto com a equipe — sem intermediários.",
+
+    "S7_EYEBROW": "ACESSE AGORA",
+    "S7_TITLE": "<em>sindicatosate.com.br</em>",
+    "S7_BODY": "Entra lá, explora e manda pra um colega. O sindicato agora é digital também.",
+    "S7_CTA": "Acessar o site →"
+  }
+}

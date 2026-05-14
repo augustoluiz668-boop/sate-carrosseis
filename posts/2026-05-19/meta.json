@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-19",
+  "scheduled_at": "2026-05-19T12:00:00Z",
+  "template": "data-comemorativa",
+  "status": "pending",
+  "theme": "Aquecimento Festa da Enfermagem 23/05",
+  "data": {
+    "CATEGORY": "FESTA DA ENFERMAGEM",
+
+    "EYEBROW": "23 DE MAIO",
+    "TITLE": "A festa da enfermagem <em>tá chegando.</em>",
+    "SUBTITLE": "Churrasco, brindes, sorvete e muito mais. Você já está preparado?",
+
+    "S2_EYEBROW": "QUANDO E ONDE?",
+    "S2_TITLE": "Clube dos <em>Vigilantes.</em>",
+    "S2_BODY1": "23 de maio de 2026 — das 13h às 17h.",
+    "S2_BODY2": "Rua Rio Dourados, Bauru — Clube dos Vigilantes. Chegue cedo e aproveite tudo!",
+
+    "S3_EYEBROW": "UMA FAMÍLIA ENORME",
+    "S3_NUMBER": "450+",
+    "S3_BODY": "convidados esperados — auxiliares, técnicos, famílias e amigos da enfermagem reunidos em um só dia.",
+
+    "S4_EYEBROW": "O DIA QUE É DE VOCÊS",
+    "S4_QUOTE": "Celebrar quem cuida do próximo é o mínimo que podemos fazer. E vamos fazer com gostinho de quero mais.",
+    "S4_AUTHOR": "— S.A.T.E. Bauru e Região",
+
+    "S5_EYEBROW": "NA MESA",
+    "S5_TITLE": "Churrasco e bebidas <em>à vontade.</em>",
+    "S5_BODY": "Carne no capricho, bebidas não alcoólicas geladas e tudo que você precisa para recarregar as energias depois de tanto plantão.",
+
+    "S6_EYEBROW": "TEM MAIS",
+    "S6_TITLE": "Três surpresas <em>esperando por você.</em>",
+    "S6_ITEM1": "→ Carrinho de sorvete — escolha o sabor e aproveite!",
+    "S6_ITEM2": "→ Algodão doce — aquela nostalgia que todo mundo ama.",
+    "S6_ITEM3": "→ Brindes exclusivos — tem surpresa preparada pra você.",
+
+    "S7_EYEBROW": "NOS VEMOS LÁ",
+    "S7_TITLE": "Faltam poucos dias para <em>a festa.</em>",
+    "S7_BODY": "Salva na agenda, confirma com a família e prepara o visual. A enfermagem merece celebrar!",
+    "S7_CTA": "23/05 — Clube dos Vigilantes"
+  }
+}
