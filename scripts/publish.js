@@ -99,6 +99,42 @@ async function publishFbMultiPhoto(photoIds, caption) {
   return data.id;
 }
 
+// ─── Instagram Reels helpers ──────────────────────────────────────────────────
+
+async function createReelContainer(videoUrl, caption) {
+  const { data } = await axios.post(`${IG_GRAPH}/${IG_BUSINESS_ID}/media`, null, {
+    params: {
+      media_type: 'REELS',
+      video_url: videoUrl,
+      caption,
+      share_to_feed: true,
+      access_token: IG_ACCESS_TOKEN,
+    },
+  });
+  return data.id;
+}
+
+async function waitForReelReady(id, maxAttempts = 40) {
+  console.log('  • Aguardando processamento do vídeo (pode levar 1-3 min)...');
+  for (let i = 0; i < maxAttempts; i++) {
+    const { data } = await axios.get(`${IG_GRAPH}/${id}`, {
+      params: { fields: 'status_code', access_token: IG_ACCESS_TOKEN },
+    });
+    if (data.status_code === 'FINISHED') return;
+    if (data.status_code === 'ERROR') throw new Error(`Reel container ${id} falhou`);
+    process.stdout.write('.');
+    await new Promise((r) => setTimeout(r, 5000));
+  }
+  throw new Error(`Reel container ${id} não finalizou em tempo`);
+}
+
+async function publishReelContainer(creationId) {
+  const { data } = await axios.post(`${IG_GRAPH}/${IG_BUSINESS_ID}/media_publish`, null, {
+    params: { creation_id: creationId, access_token: IG_ACCESS_TOKEN },
+  });
+  return data.id;
+}
+
 async function main() {
   assertEnv();
 
@@ -150,6 +186,25 @@ async function main() {
   console.log('  • Creating post...');
   const fbPostId = await publishFbMultiPhoto(fbPhotoIds, caption);
   console.log(`✓ Facebook — post id ${fbPostId}`);
+
+  // ── Instagram Reel (se reel.mp4 existir) ──────────────────────────────────
+  const reelPath = path.join(dateDir, 'reel.mp4');
+  let reelExists = false;
+  try { await fs.access(reelPath); reelExists = true; } catch {}
+
+  if (reelExists) {
+    console.log('\n▶ Publishing Reel to Instagram...');
+    const reelUrl = `${GH_RAW_BASE}/posts/${date}/reel.mp4`;
+    const reelContainerId = await createReelContainer(reelUrl, caption);
+    process.stdout.write('  ');
+    await waitForReelReady(reelContainerId);
+    process.stdout.write('\n');
+    const reelMediaId = await publishReelContainer(reelContainerId);
+    console.log(`✓ Reel publicado — media id ${reelMediaId}`);
+    meta.instagram_reel_id = reelMediaId;
+  } else {
+    console.log('\n• Sem reel.mp4 — pulando Reel.');
+  }
 
   meta.status = 'published';
   meta.published_at = new Date().toISOString();
