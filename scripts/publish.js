@@ -1,9 +1,11 @@
-// Publish today's carousel to Instagram via Graph API.
+// Publish today's carousel to Instagram + Facebook via Graph API.
 //
 // Required env:
-//   IG_ACCESS_TOKEN   long-lived page access token
-//   IG_BUSINESS_ID    Instagram Business Account ID
-//   GH_RAW_BASE       e.g. https://raw.githubusercontent.com/<user>/<repo>/main
+//   IG_ACCESS_TOKEN       long-lived Instagram access token
+//   IG_BUSINESS_ID        Instagram Business Account ID
+//   GH_RAW_BASE           e.g. https://raw.githubusercontent.com/<user>/<repo>/main
+//   FB_PAGE_ID            Facebook Page ID
+//   FB_PAGE_ACCESS_TOKEN  permanent Facebook Page access token
 //
 // Usage:
 //   node scripts/publish.js              # publish today's post
@@ -19,11 +21,12 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 
 // Login with Instagram Business uses graph.instagram.com (no version prefix).
-const GRAPH = 'https://graph.instagram.com';
-const { IG_ACCESS_TOKEN, IG_BUSINESS_ID, GH_RAW_BASE } = process.env;
+const IG_GRAPH = 'https://graph.instagram.com';
+const FB_GRAPH = 'https://graph.facebook.com/v21.0';
+const { IG_ACCESS_TOKEN, IG_BUSINESS_ID, GH_RAW_BASE, FB_PAGE_ID, FB_PAGE_ACCESS_TOKEN } = process.env;
 
 function assertEnv() {
-  const missing = ['IG_ACCESS_TOKEN', 'IG_BUSINESS_ID', 'GH_RAW_BASE']
+  const missing = ['IG_ACCESS_TOKEN', 'IG_BUSINESS_ID', 'GH_RAW_BASE', 'FB_PAGE_ID', 'FB_PAGE_ACCESS_TOKEN']
     .filter((k) => !process.env[k]);
   if (missing.length) {
     console.error(`✗ Missing env vars: ${missing.join(', ')}`);
@@ -42,31 +45,24 @@ async function listSlides(slidesDir) {
     .sort((a, b) => parseInt(a) - parseInt(b));
 }
 
+// ─── Instagram helpers ────────────────────────────────────────────────────────
+
 async function createItemContainer(imageUrl) {
-  const { data } = await axios.post(`${GRAPH}/${IG_BUSINESS_ID}/media`, null, {
-    params: {
-      image_url: imageUrl,
-      is_carousel_item: true,
-      access_token: IG_ACCESS_TOKEN,
-    },
+  const { data } = await axios.post(`${IG_GRAPH}/${IG_BUSINESS_ID}/media`, null, {
+    params: { image_url: imageUrl, is_carousel_item: true, access_token: IG_ACCESS_TOKEN },
   });
   return data.id;
 }
 
 async function createCarouselContainer(childrenIds, caption) {
-  const { data } = await axios.post(`${GRAPH}/${IG_BUSINESS_ID}/media`, null, {
-    params: {
-      media_type: 'CAROUSEL',
-      children: childrenIds.join(','),
-      caption,
-      access_token: IG_ACCESS_TOKEN,
-    },
+  const { data } = await axios.post(`${IG_GRAPH}/${IG_BUSINESS_ID}/media`, null, {
+    params: { media_type: 'CAROUSEL', children: childrenIds.join(','), caption, access_token: IG_ACCESS_TOKEN },
   });
   return data.id;
 }
 
-async function publishContainer(creationId) {
-  const { data } = await axios.post(`${GRAPH}/${IG_BUSINESS_ID}/media_publish`, null, {
+async function publishIgContainer(creationId) {
+  const { data } = await axios.post(`${IG_GRAPH}/${IG_BUSINESS_ID}/media_publish`, null, {
     params: { creation_id: creationId, access_token: IG_ACCESS_TOKEN },
   });
   return data.id;
@@ -74,7 +70,7 @@ async function publishContainer(creationId) {
 
 async function waitForContainerReady(id, maxAttempts = 20) {
   for (let i = 0; i < maxAttempts; i++) {
-    const { data } = await axios.get(`${GRAPH}/${id}`, {
+    const { data } = await axios.get(`${IG_GRAPH}/${id}`, {
       params: { fields: 'status_code', access_token: IG_ACCESS_TOKEN },
     });
     if (data.status_code === 'FINISHED') return;
@@ -82,6 +78,25 @@ async function waitForContainerReady(id, maxAttempts = 20) {
     await new Promise((r) => setTimeout(r, 3000));
   }
   throw new Error(`Container ${id} did not finish in time`);
+}
+
+// ─── Facebook helpers ─────────────────────────────────────────────────────────
+
+async function uploadFbPhoto(imageUrl) {
+  const { data } = await axios.post(`${FB_GRAPH}/${FB_PAGE_ID}/photos`, null, {
+    params: { url: imageUrl, published: false, access_token: FB_PAGE_ACCESS_TOKEN },
+  });
+  return data.id;
+}
+
+async function publishFbMultiPhoto(photoIds, caption) {
+  const attachedMedia = Object.fromEntries(
+    photoIds.map((id, i) => [`attached_media[${i}]`, JSON.stringify({ media_fbid: id })])
+  );
+  const { data } = await axios.post(`${FB_GRAPH}/${FB_PAGE_ID}/feed`, null, {
+    params: { message: caption, ...attachedMedia, access_token: FB_PAGE_ACCESS_TOKEN },
+  });
+  return data.id;
 }
 
 async function main() {
@@ -118,13 +133,28 @@ async function main() {
   const carouselId = await createCarouselContainer(childrenIds, caption);
   await waitForContainerReady(carouselId);
 
-  console.log('  • Publishing...');
-  const mediaId = await publishContainer(carouselId);
-  console.log(`✓ Published — media id ${mediaId}`);
+  console.log('  • Publishing to Instagram...');
+  const igMediaId = await publishIgContainer(carouselId);
+  console.log(`✓ Instagram — media id ${igMediaId}`);
+
+  // ── Facebook ──────────────────────────────────────────────────────────────
+  console.log('\n▶ Publishing to Facebook...');
+  console.log('  • Uploading photos...');
+  const fbPhotoIds = [];
+  for (const file of slides) {
+    const url = `${GH_RAW_BASE}/posts/${date}/slides/${file}`;
+    const id = await uploadFbPhoto(url);
+    console.log(`    ✓ ${file} → ${id}`);
+    fbPhotoIds.push(id);
+  }
+  console.log('  • Creating post...');
+  const fbPostId = await publishFbMultiPhoto(fbPhotoIds, caption);
+  console.log(`✓ Facebook — post id ${fbPostId}`);
 
   meta.status = 'published';
   meta.published_at = new Date().toISOString();
-  meta.instagram_media_id = mediaId;
+  meta.instagram_media_id = igMediaId;
+  meta.facebook_post_id = fbPostId;
   await fs.writeFile(metaPath, JSON.stringify(meta, null, 2), 'utf8');
 }
 
