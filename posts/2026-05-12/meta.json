@@ -3,6 +3,7 @@
   "scheduled_at": "2026-05-12T12:00:00Z",
   "template": "data-comemorativa",
   "status": "paused",
+  "music_theme": "informativo",
   "theme": "Dia Internacional do Enfermeiro",
   "data": {
     "CATEGORY": "DIA DO ENFERMEIRO",
