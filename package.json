@@ -8,6 +8,7 @@
     "render": "node scripts/render.js",
     "publish": "node scripts/publish.js",
     "post:now": "node scripts/render.js && node scripts/publish.js",
+    "video": "node scripts/render-video.js",
     "token:exchange": "node scripts/get-long-token.js exchange",
     "token:refresh": "node scripts/get-long-token.js refresh",
     "token:test": "node scripts/test-token.js"
