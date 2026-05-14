@@ -85,15 +85,22 @@ async function renderVideo(date) {
 
   const meta = JSON.parse(await fs.readFile(metaPath, 'utf8'));
   const theme = meta.music_theme || 'informativo';
-  const musicPath = path.join(ROOT, 'brand', 'music', `${theme}.mp3`);
 
-  try {
-    await fs.access(musicPath);
-  } catch {
-    console.warn(`⚠  Música não encontrada: ${musicPath}`);
-    console.warn('   Adicione o arquivo MP3 em brand/music/ antes de renderizar.');
+  // Pegar todos os arquivos do tema (celebration.mp3, celebration (1).mp3, etc.)
+  const musicDir = path.join(ROOT, 'brand', 'music');
+  const allMusic = (await fs.readdir(musicDir))
+    .filter((f) => f.toLowerCase().startsWith(theme.toLowerCase()) && f.endsWith('.mp3'));
+
+  if (!allMusic.length) {
+    console.warn(`⚠  Nenhuma música encontrada para tema "${theme}" em brand/music/`);
+    console.warn('   Adicione arquivos MP3 com nome iniciando por: ' + theme);
     process.exit(1);
   }
+
+  // Escolher aleatoriamente entre os disponíveis
+  const chosen = allMusic[Math.floor(Math.random() * allMusic.length)];
+  const musicPath = path.join(musicDir, chosen);
+  console.log(`  🎵 Música: ${chosen}`);
 
   const slides = await listSlides(slidesDir);
   if (!slides.length) throw new Error(`Nenhum slide encontrado em ${slidesDir}`);
