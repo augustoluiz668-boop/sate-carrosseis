@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-21",
+  "scheduled_at": "2026-05-21T12:00:00Z",
+  "template": "data-comemorativa",
+  "status": "pending",
+  "music_theme": "celebration",
+  "theme": "aquecimento-festa-comunidade",
+  "data": {
+    "CATEGORY": "FESTA DA ENFERMAGEM",
+    "EYEBROW": "23 DE MAIO",
+    "TITLE": "Celebrar juntos é o que nos <em>une</em>",
+    "SUBTITLE": "Porque a enfermagem não é só profissão — é família.",
+
+    "S2_EYEBROW": "NOSSA HISTÓRIA",
+    "S2_TITLE": "Construída com cuidado, celebrada com <em>orgulho</em>",
+    "S2_BODY1": "Cada plantão, cada noite virada, cada vida cuidada — tudo isso nos trouxe até aqui. Este sábado é o momento de respirar fundo e comemorar quem somos.",
+    "S2_BODY2": "O S.A.T.E. Bauru e Região reservou esse dia especialmente para você, para a sua família e para todos que fazem parte dessa categoria incrível.",
+
+    "S3_EYEBROW": "NOSSA COMUNIDADE",
+    "S3_NUMBER": "450+",
+    "S3_BODY": "Auxiliares, técnicos, famílias e amigos da enfermagem reunidos em um só lugar para celebrar a força de uma categoria que nunca para.",
+
+    "S4_EYEBROW": "UMA MENSAGEM",
+    "S4_QUOTE": "Vocês cuidam de todos. Este dia foi feito para que alguém cuide de vocês.",
+    "S4_AUTHOR": "— S.A.T.E. Bauru e Região",
+
+    "S5_EYEBROW": "O QUE NOS ESPERA",
+    "S5_TITLE": "Uma tarde de <em>alegria</em> que você merece",
+    "S5_BODY": "Churrasco, bebidas à vontade, carrinho de sorvete, algodão doce e brindes exclusivos. Tudo preparado com carinho para quem dá tudo de si todos os dias.",
+
+    "S6_EYEBROW": "DETALHES DO EVENTO",
+    "S6_TITLE": "Anote e <em>compartilhe</em>",
+    "S6_ITEM1": "→ Sábado, 23 de maio — das 13h às 17h",
+    "S6_ITEM2": "→ Clube dos Vigilantes, Rua Rio Dourados, Bauru",
+    "S6_ITEM3": "→ Leve a família e os amigos da enfermagem",
+
+    "S7_EYEBROW": "ATÉ LÁ",
+    "S7_TITLE": "A festa mais <em>esperada</em> da categoria está chegando",
+    "S7_BODY": "Prepare o coração para um momento inesquecível. A enfermagem de Bauru merece cada segundo desta celebração.",
+    "S7_CTA": "23/05 — Clube dos Vigilantes"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-22",
+  "scheduled_at": "2026-05-22T12:00:00Z",
+  "template": "data-comemorativa",
+  "status": "pending",
+  "music_theme": "celebration",
+  "theme": "aquecimento-festa-amanha",
+  "data": {
+    "CATEGORY": "FESTA DA ENFERMAGEM",
+    "EYEBROW": "23 DE MAIO",
+    "TITLE": "<em>Amanhã</em> é o nosso dia!",
+    "SUBTITLE": "A enfermagem de Bauru vai celebrar — e muito!",
+
+    "S2_EYEBROW": "É AMANHÃ!",
+    "S2_TITLE": "Chegou a hora de <em>comemorar</em>",
+    "S2_BODY1": "Amanhã, a partir das 13h, o Clube dos Vigilantes vai vibrar com a energia de quem cuida de vidas todos os dias. Você está pronto?",
+    "S2_BODY2": "Chega cedo, aproveita cada detalhe e vive essa tarde como ela merece — com alegria, orgulho e muita festa!",
+
+    "S3_EYEBROW": "VOCÊ NÃO ESTÁ SOZINHO",
+    "S3_NUMBER": "450+",
+    "S3_BODY": "Mais de 450 pessoas da família da enfermagem estarão lá. Auxiliares, técnicos, famílias — todos juntos nessa celebração histórica.",
+
+    "S4_EYEBROW": "ÚLTIMA CHAMADA",
+    "S4_QUOTE": "Não tem desculpa: amanhã, todo mundo no Clube dos Vigilantes. Vamos juntos!",
+    "S4_AUTHOR": "— S.A.T.E. Bauru e Região",
+
+    "S5_EYEBROW": "O QUE TEM AMANHÃ",
+    "S5_TITLE": "Tudo o que você <em>ama</em> em um só lugar",
+    "S5_BODY": "Churrasco + bebidas à vontade, carrinho de sorvete, algodão doce e brindes exclusivos esperando por você. Prepare o estômago e o coração!",
+
+    "S6_EYEBROW": "CHECKLIST DO DIA",
+    "S6_TITLE": "Antes de <em>sair</em> de casa",
+    "S6_ITEM1": "→ Chega cedo — das 13h às 17h no Clube dos Vigilantes",
+    "S6_ITEM2": "→ Leva a família toda: quanto mais, melhor!",
+    "S6_ITEM3": "→ Prepara o visual e vem com tudo para curtir",
+
+    "S7_EYEBROW": "NOS VEMOS LÁ",
+    "S7_TITLE": "A festa <em>começa</em> amanhã",
+    "S7_BODY": "Este é o momento da enfermagem de Bauru se reunir, sorrir e celebrar. Te esperamos com todo o carinho que você merece.",
+    "S7_CTA": "23/05 — Clube dos Vigilantes"
+  }
+}

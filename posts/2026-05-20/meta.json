@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-20",
+  "scheduled_at": "2026-05-20T12:00:00Z",
+  "template": "data-comemorativa",
+  "status": "pending",
+  "music_theme": "celebration",
+  "theme": "Dia do Auxiliar e Técnico de Enfermagem",
+  "data": {
+    "CATEGORY": "DIA DO AUXILIAR E TÉCNICO",
+    "EYEBROW": "20 DE MAIO",
+    "TITLE": "Hoje é o dia de quem cuida com as <em>mãos</em> e com o coração",
+    "SUBTITLE": "A Semana da Enfermagem se encerra celebrando você — o profissional que está sempre ao lado do paciente.",
+
+    "S2_EYEBROW": "POR QUE 20 DE MAIO?",
+    "S2_TITLE": "Uma data que honra quem faz a diferença no dia a dia da saúde",
+    "S2_BODY1": "A Semana da Enfermagem começa no dia 12 de maio, aniversário de Florence Nightingale — pioneira da enfermagem moderna. Ela se encerra no dia 20, celebrando especialmente os Auxiliares e Técnicos de Enfermagem.",
+    "S2_BODY2": "São esses profissionais que realizam a maior parte dos procedimentos à beira do leito: curativos, medicações, coletas, monitoramento e, acima de tudo, acolhimento humano.",
+
+    "S3_EYEBROW": "A FORÇA DA CATEGORIA",
+    "S3_NUMBER": "+2 milhões",
+    "S3_BODY": "O Brasil conta com mais de 2 milhões de Auxiliares e Técnicos de Enfermagem — a maior força de trabalho na saúde do país. São eles que garantem assistência 24 horas por dia, 7 dias por semana.",
+
+    "S4_EYEBROW": "PALAVRAS QUE FICAM",
+    "S4_QUOTE": "Cuidar não é apenas uma profissão. É um ato de amor que se repete a cada plantão.",
+    "S4_AUTHOR": "Dedicado a todos os Auxiliares e Técnicos de Enfermagem",
+
+    "S5_EYEBROW": "VOCÊ SABIA?",
+    "S5_TITLE": "O Técnico de Enfermagem executa mais de 90% dos procedimentos hospitalares",
+    "S5_BODY": "Desde a administração de medicamentos até o suporte emocional ao paciente e à família, o Técnico e o Auxiliar de Enfermagem são a espinha dorsal do atendimento em saúde — dentro e fora dos hospitais.",
+
+    "S6_EYEBROW": "3 FATOS INCRÍVEIS",
+    "S6_TITLE": "Sobre a categoria que move a saúde brasileira",
+    "S6_ITEM1": "→ O Técnico de Enfermagem pode atuar em mais de 15 áreas diferentes da saúde, do CTI à saúde da família.",
+    "S6_ITEM2": "→ Durante a pandemia de COVID-19, esses profissionais foram linha de frente absoluta — trabalhando exaustivamente para salvar vidas.",
+    "S6_ITEM3": "→ A enfermagem é considerada pela OMS uma das profissões mais essenciais para o fortalecimento dos sistemas de saúde do mundo.",
+
+    "S7_EYEBROW": "PARABÉNS!",
+    "S7_TITLE": "Para quem cuida quando mais precisamos",
+    "S7_BODY": "Marque um colega e celebre esse dia juntos.",
+    "S7_CTA": "Associe-se ao S.A.T.E."
+  }
+}

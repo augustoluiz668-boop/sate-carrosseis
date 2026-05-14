@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-23",
+  "scheduled_at": "2026-05-23T22:00:00Z",
+  "template": "data-comemorativa",
+  "status": "pending",
+  "music_theme": "celebration",
+  "theme": "Pós-Festa da Enfermagem",
+  "data": {
+    "CATEGORY": "FESTA DA ENFERMAGEM",
+    "EYEBROW": "23 DE MAIO",
+    "TITLE": "Que noite <em>inesquecível</em>! Obrigado por estarem com a gente",
+    "SUBTITLE": "A Festa da Enfermagem 2025 aconteceu — e foi exatamente do jeito que a categoria merece: com muita alegria, união e celebração.",
+
+    "S2_EYEBROW": "O DIA DE HOJE",
+    "S2_TITLE": "Uma tarde que ficará guardada no coração de cada um",
+    "S2_BODY1": "Das 13h às 17h, o Clube dos Vigilantes de Bauru se transformou num grande encontro da família da enfermagem. Centenas de convidados, risadas, abraços e histórias compartilhadas — tudo isso só foi possível porque vocês estiveram aqui.",
+    "S2_BODY2": "Churrasco, bebidas, sorvete, algodão doce e brindes fizeram parte de um momento pensado com carinho para cada profissional que dá tudo de si nos plantões.",
+
+    "S3_EYEBROW": "A ENERGIA DO EVENTO",
+    "S3_NUMBER": "450+",
+    "S3_BODY": "Centenas de pessoas reunidas em nome da enfermagem. Cada pessoa presente representou a força e a dedicação de uma categoria que move a saúde de Bauru e região todos os dias.",
+
+    "S4_EYEBROW": "O QUE SENTIMOS HOJE",
+    "S4_QUOTE": "Vocês tornaram esse dia especial. A energia de cada um de vocês lembrou por que a enfermagem é tão extraordinária.",
+    "S4_AUTHOR": "S.A.T.E. — Sindicato dos Auxiliares e Técnicos de Enfermagem de Bauru e Região",
+
+    "S5_EYEBROW": "MAIS DO QUE UMA FESTA",
+    "S5_TITLE": "Um reencontro da comunidade da enfermagem",
+    "S5_BODY": "Momentos assim são fundamentais para lembrar que nenhum profissional está sozinho. O S.A.T.E. existe para unir, representar e celebrar quem cuida. Hoje, celebramos juntos — e isso tem um significado enorme.",
+
+    "S6_EYEBROW": "OS MOMENTOS DE HOJE",
+    "S6_TITLE": "Tudo que tornou essa festa especial",
+    "S6_ITEM1": "→ Churrasco e bebidas compartilhados entre colegas, amigos e famílias — porque cuidar também é festejar junto.",
+    "S6_ITEM2": "→ Sorvete e algodão doce para adoçar uma tarde que já estava cheia de alegria.",
+    "S6_ITEM3": "→ Brindes e surpresas para levar um pedacinho dessa festa pra casa.",
+
+    "S7_EYEBROW": "OBRIGADO!",
+    "S7_TITLE": "Vocês fazem o S.A.T.E. valer a pena",
+    "S7_BODY": "Marque quem estava com você hoje e reviva esse momento incrível!",
+    "S7_CTA": "Obrigado, enfermagem! ❤️"
+  }
+}

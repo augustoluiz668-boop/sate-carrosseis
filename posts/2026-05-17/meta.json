@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-17",
+  "scheduled_at": "2026-05-17T12:00:00Z",
+  "template": "data-comemorativa",
+  "status": "pending",
+  "music_theme": "informativo",
+  "theme": "A História do S.A.T.E.",
+  "data": {
+    "CATEGORY": "NOSSA HISTÓRIA",
+    "EYEBROW": "Conheça quem luta por você",
+    "TITLE": "O <em>S.A.T.E.</em> é a sua voz",
+    "SUBTITLE": "Sindicato dos Auxiliares e Técnicos de Enfermagem de Bauru e Região — presente em cada etapa da sua carreira.",
+
+    "S2_EYEBROW": "Quem somos",
+    "S2_TITLE": "Nascemos para <em>representar</em>",
+    "S2_BODY1": "O S.A.T.E. é o sindicato que representa auxiliares e técnicos de enfermagem de Bauru e toda a região. Somos a ponte entre quem cuida e quem decide.",
+    "S2_BODY2": "Fundado com o propósito de fortalecer a categoria, o sindicato cresceu ao lado dos profissionais que dedicam suas vidas ao cuidado com o próximo.",
+
+    "S3_EYEBROW": "Nossa abrangência",
+    "S3_NUMBER": "Bauru e Região",
+    "S3_BODY": "Atuamos em Bauru e municípios da região, garantindo que nenhum técnico ou auxiliar de enfermagem esteja sozinho na defesa dos seus interesses.",
+
+    "S4_EYEBROW": "Nossa missão",
+    "S4_QUOTE": "Unir, representar e fortalecer quem cuida da vida. Essa é a razão de existirmos — ontem, hoje e sempre.",
+    "S4_AUTHOR": "— S.A.T.E. Bauru e Região",
+
+    "S5_EYEBROW": "O que fazemos",
+    "S5_TITLE": "Muito mais do que um <em>sindicato</em>",
+    "S5_BODY": "Promovemos capacitação, eventos de valorização da categoria como a Festa da Enfermagem, orientação profissional e um canal aberto de diálogo com cada associado. Somos comunidade.",
+
+    "S6_EYEBROW": "Nossos pilares",
+    "S6_TITLE": "O que nos <em>guia</em>",
+    "S6_ITEM1": "Representatividade — sua voz tem peso aqui dentro.",
+    "S6_ITEM2": "Comunidade — somos mais fortes juntos, unidos pela mesma missão.",
+    "S6_ITEM3": "Valorização — cada técnico e auxiliar merece reconhecimento e respeito.",
+
+    "S7_EYEBROW": "Faça parte",
+    "S7_TITLE": "A <em>história</em> continua com você",
+    "S7_BODY": "O S.A.T.E. só existe porque existem profissionais comprometidos com a enfermagem de Bauru e Região. Venha fazer parte dessa história.",
+    "S7_CTA": "Associe-se ao S.A.T.E."
+  }
+}

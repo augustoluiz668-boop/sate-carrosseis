@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-18",
+  "scheduled_at": "2026-05-18T12:00:00Z",
+  "template": "data-comemorativa",
+  "status": "pending",
+  "music_theme": "informativo",
+  "theme": "Saúde Mental na Enfermagem",
+  "data": {
+    "CATEGORY": "BEM-ESTAR",
+    "EYEBROW": "18 DE MAIO — DIA NACIONAL DA ENFERMAGEM",
+    "TITLE": "Cuidar de quem <em>cuida</em>",
+    "SUBTITLE": "Saúde mental na enfermagem: o que os dados revelam e o que você pode fazer hoje.",
+
+    "S2_EYEBROW": "A REALIDADE DA CATEGORIA",
+    "S2_TITLE": "Burnout não é fraqueza — é um sinal de alerta",
+    "S2_BODY1": "Trabalhar sob pressão constante, lidar com sofrimento alheio e ainda manter a excelência no atendimento cobra um preço alto. O esgotamento emocional é real e merece atenção.",
+    "S2_BODY2": "Reconhecer os sinais é o primeiro passo para cuidar de si.",
+
+    "S3_EYEBROW": "EM NÚMEROS",
+    "S3_NUMBER": "72%",
+    "S3_BODY": "dos profissionais de enfermagem no Brasil relatam sintomas de esgotamento emocional, segundo pesquisa da Fiocruz (2023). Você não está sozinho nessa.",
+
+    "S4_EYEBROW": "PARA REFLETIR",
+    "S4_QUOTE": "Você não consegue cuidar de ninguém com um copo vazio. Reabasteça-se — isso também é parte do cuidado.",
+    "S4_AUTHOR": "Adaptado do movimento 'Cuide de Quem Cuida' — CFE",
+
+    "S5_EYEBROW": "SINAIS QUE MERECEM ATENÇÃO",
+    "S5_TITLE": "Seu corpo e sua mente falam",
+    "S5_BODY": "Irritabilidade frequente, insônia, sensação de vazio após o plantão e dificuldade de se desconectar do trabalho são sinais comuns de esgotamento. Identificá-los cedo faz toda a diferença.",
+
+    "S6_EYEBROW": "DICAS PRÁTICAS",
+    "S6_TITLE": "3 hábitos simples para quem faz plantão",
+    "S6_ITEM1": "Micro-pausas valem muito: 5 minutos de respiração profunda entre atendimentos reduzem o cortisol e melhoram o foco.",
+    "S6_ITEM2": "Ritual de descompressão: antes de dormir após o plantão, anote 3 coisas pequenas que deram certo no dia — redireciona o cérebro do modo alerta.",
+    "S6_ITEM3": "Peça e aceite ajuda: dividir casos difíceis com colegas não é fraqueza, é inteligência emocional. Rodas de conversa e grupos de apoio fazem diferença real.",
+
+    "S7_EYEBROW": "VOCÊ TEM APOIO",
+    "S7_TITLE": "Cuidar de você faz parte da missão",
+    "S7_BODY": "O S.A.T.E. acredita que profissionais saudáveis prestam cuidados melhores. Juntos, construímos uma categoria mais forte, mais acolhida e mais resiliente.",
+    "S7_CTA": "Associe-se ao S.A.T.E."
+  }
+}

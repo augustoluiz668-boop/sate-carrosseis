@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-24",
+  "scheduled_at": "2026-05-24T12:00:00Z",
+  "template": "data-comemorativa",
+  "status": "pending",
+  "music_theme": "celebration",
+  "theme": "Agradecimento Festa da Enfermagem",
+  "data": {
+    "CATEGORY": "FESTA DA ENFERMAGEM",
+    "EYEBROW": "COM GRATIDÃO",
+    "TITLE": "Do fundo do coração: muito <em>obrigado</em>",
+    "SUBTITLE": "O evento já passou, mas a emoção ficou. Queremos agradecer a todos que tornaram a Festa da Enfermagem 2025 um momento tão especial.",
+
+    "S2_EYEBROW": "GRATIDÃO",
+    "S2_TITLE": "Para quem fez tudo isso acontecer",
+    "S2_BODY1": "A Festa da Enfermagem só existe porque existe uma comunidade que acredita na categoria — e que faz questão de se unir para celebrar. Cada presença no Clube dos Vigilantes no dia 23 de maio foi um ato de pertencimento e afeto.",
+    "S2_BODY2": "Agradecemos a cada profissional, familiar e amigo que reservou sua tarde para estar com a gente. Vocês são a razão de o S.A.T.E. existir.",
+
+    "S3_EYEBROW": "UM ENCONTRO HISTÓRICO",
+    "S3_NUMBER": "450+",
+    "S3_BODY": "Centenas de pessoas reunidas em nome da enfermagem de Bauru e região. Um número que representa não apenas presença física, mas o tamanho da nossa comunidade e a força da nossa categoria.",
+
+    "S4_EYEBROW": "NOSSA MENSAGEM",
+    "S4_QUOTE": "Vocês não vieram apenas a uma festa. Vocês reafirmaram que a enfermagem é uma família — e que juntos somos mais fortes.",
+    "S4_AUTHOR": "S.A.T.E. — Sindicato dos Auxiliares e Técnicos de Enfermagem de Bauru e Região",
+
+    "S5_EYEBROW": "AGRADECIMENTO ESPECIAL",
+    "S5_TITLE": "À equipe, aos presentes e às famílias",
+    "S5_BODY": "Agradecemos à equipe de organização que dedicou semanas para que tudo saísse perfeito, a cada profissional de enfermagem que chegou após um plantão exaustivo só para celebrar, e às famílias que compartilharam esse momento especial ao lado de quem tanto se dedicam.",
+
+    "S6_EYEBROW": "O QUE LEVAMOS DESSE DIA",
+    "S6_TITLE": "Três sentimentos que ficaram",
+    "S6_ITEM1": "→ União — ver centenas de profissionais reunidos lembra que a enfermagem é uma categoria forte e presente.",
+    "S6_ITEM2": "→ Orgulho — de representar quem cuida com dedicação, todos os dias, em todos os cantos de Bauru e região.",
+    "S6_ITEM3": "→ Esperança — de que o próximo encontro seja ainda maior e mais especial. Já estamos planejando.",
+
+    "S7_EYEBROW": "ATÉ A PRÓXIMA",
+    "S7_TITLE": "O melhor ainda está por vir",
+    "S7_BODY": "Fique de olho nas novidades do S.A.T.E. A enfermagem merece ser celebrada o ano todo.",
+    "S7_CTA": "Obrigado, enfermagem! ❤️"
+  }
+}
