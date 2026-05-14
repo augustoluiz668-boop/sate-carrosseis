@@ -28,8 +28,14 @@ jobs:
       - name: Install deps
         run: npm ci
 
+      - name: Install ffmpeg
+        run: sudo apt-get install -y ffmpeg
+
       - name: Render slides (in case not pre-rendered)
         run: node scripts/render.js ${{ github.event.inputs.date }}
+
+      - name: Render video (Reel)
+        run: node scripts/render-video.js ${{ github.event.inputs.date }}
 
       - name: Commit rendered PNGs
         run: |
