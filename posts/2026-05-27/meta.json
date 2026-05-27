@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-27",
+  "scheduled_at": "2026-05-27T12:00:00Z",
+  "template": "data-comemorativa",
+  "status": "pending",
+  "music_theme": "informativo",
+  "theme": "NR-1 — Riscos Psicossociais Obrigatórios",
+  "data": {
+    "CATEGORY": "ATUALIZAÇÃO IMPORTANTE",
+    "EYEBROW": "NR-1 ATUALIZADA",
+    "TITLE": "Saúde mental virou <em>obrigação legal.</em>",
+    "SUBTITLE": "A Norma Regulamentadora nº 1 agora exige que empresas avaliem e controlem riscos psicossociais no trabalho — e a enfermagem é a categoria mais afetada.",
+
+    "S2_EYEBROW": "O QUE MUDOU?",
+    "S2_TITLE": "Riscos psicossociais <em>no mapa oficial.</em>",
+    "S2_BODY1": "Estresse, assédio e sobrecarga agora compõem o PGR (Programa de Gerenciamento de Riscos) de cada empresa — ao lado dos riscos físicos e químicos.",
+    "S2_BODY2": "A empresa que não mapear e controlar esses fatores está sujeita à fiscalização e multa do Ministério do Trabalho e Emprego.",
+
+    "S3_EYEBROW": "A CATEGORIA MAIS AFETADA",
+    "S3_NUMBER": "72%",
+    "S3_BODY": "dos profissionais de enfermagem relatam estresse elevado no trabalho — tornando a categoria uma das mais vulneráveis aos riscos psicossociais.",
+
+    "S4_EYEBROW": "POR QUE ISSO IMPORTA",
+    "S4_QUOTE": "Cuidar da saúde mental do trabalhador não é favor — é responsabilidade legal. E agora, o Estado cobrou.",
+    "S4_AUTHOR": "— S.A.T.E. Bauru e Região",
+
+    "S5_EYEBROW": "O QUE A NR-1 EXIGE",
+    "S5_TITLE": "PGR e GRO precisam <em>incluir agora:</em>",
+    "S5_BODY": "Mapeamento oficial de riscos psicossociais, medidas de controle documentadas e revisão periódica — tudo com registro e evidência para fiscalização do MTE.",
+
+    "S6_EYEBROW": "MEDIDAS OBRIGATÓRIAS",
+    "S6_TITLE": "O que empresas devem <em>implementar.</em>",
+    "S6_ITEM1": "→ Pesquisas de clima e canais de denúncia de assédio ativos",
+    "S6_ITEM2": "→ Treinamentos sobre saúde mental, assédio e gestão de conflitos",
+    "S6_ITEM3": "→ Flexibilidade de horários e programas de suporte psicológico",
+
+    "S7_EYEBROW": "O S.A.T.E. ESTÁ JUNTO",
+    "S7_TITLE": "Fique informado sobre <em>seus direitos.</em>",
+    "S7_BODY": "O S.A.T.E. acompanha todas as atualizações que afetam a enfermagem de Bauru e Região. Sua proteção começa pela informação.",
+    "S7_CTA": "Associe-se ao S.A.T.E."
+  }
+}
