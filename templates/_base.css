@@ -185,21 +185,15 @@ html, body {
   border-radius: 999px;
 }
 
-/* ============ CTA button (pill) ============ */
-.cta-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  margin-top: 50px;
-  background: var(--accent);
-  color: var(--white);
+/* ============ CTA text (slide 7) ============ */
+.cta-text {
+  margin-top: 44px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 30px;
-  padding: 22px 44px;
-  border-radius: 999px;
+  font-size: 28px;
+  line-height: 1.35;
+  color: var(--white);
   align-self: flex-start;
-  box-shadow: 0 8px 30px rgba(244, 115, 97, 0.35);
 }
 
 /* ============ Category badge (top-right of topbar area) ============ */
@@ -229,10 +223,8 @@ html, body {
 .slide.cta .title em, .slide.cta .title .it { color: #FFEDDC; }
 .slide.cta .body-text { color: rgba(255, 255, 255, 0.92); }
 .slide.cta .divider { background: var(--white); }
-.slide.cta .cta-pill {
-  background: var(--white);
-  color: var(--accent);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+.slide.cta .cta-text {
+  color: rgba(255, 255, 255, 0.95);
 }
 .slide.cta .bottomrow .handle-bottom { color: rgba(255, 255, 255, 0.85); }
 .slide.cta .bottomrow .sate-badge { background: rgba(255, 255, 255, 0.2); color: var(--white); }
