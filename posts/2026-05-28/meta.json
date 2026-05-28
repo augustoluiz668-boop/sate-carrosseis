@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-28",
+  "scheduled_at": "2026-05-28T12:00:00Z",
+  "template": "data-comemorativa",
+  "status": "pending",
+  "music_theme": "informativo",
+  "theme": "Dia Nacional de Redução da Mortalidade Materna",
+  "data": {
+    "CATEGORY": "SAÚDE DA MULHER",
+    "EYEBROW": "28 DE MAIO",
+    "TITLE": "Toda morte materna <em>é evitável.</em>",
+    "SUBTITLE": "O Dia Nacional de Redução da Mortalidade Materna existe para lembrar que vidas de mães ainda são perdidas por falta de cuidado — e que isso precisa mudar.",
+
+    "S2_EYEBROW": "O QUE É MORTE MATERNA?",
+    "S2_TITLE": "Uma perda que <em>não deveria acontecer.</em>",
+    "S2_BODY1": "É o óbito de uma mulher durante a gestação ou em até 42 dias após o término da gravidez, por causas relacionadas ou agravadas pela gravidez.",
+    "S2_BODY2": "A maioria dessas mortes é evitável com pré-natal adequado, equipe qualificada e infraestrutura hospitalar suficiente.",
+
+    "S3_EYEBROW": "A REALIDADE NO BRASIL",
+    "S3_NUMBER": "1.700",
+    "S3_BODY": "mulheres morrem por causas maternas a cada ano no Brasil — uma das taxas mais altas entre países de renda média, segundo o Ministério da Saúde.",
+
+    "S4_EYEBROW": "POR QUE ISSO NOS DIZ RESPEITO",
+    "S4_QUOTE": "Cada morte materna é um retrato do que faltou: cuidado, acesso, escuta e dignidade. A enfermagem está na linha de frente para mudar isso.",
+    "S4_AUTHOR": "— S.A.T.E. Bauru e Região",
+
+    "S5_EYEBROW": "PRINCIPAIS CAUSAS",
+    "S5_TITLE": "Mortes que o cuidado <em>pode prevenir.</em>",
+    "S5_BODY": "Hipertensão e pré-eclâmpsia, hemorragias pós-parto, infecções e complicações de aborto respondem pela maioria dos óbitos — todas com protocolos de prevenção conhecidos e eficazes.",
+
+    "S6_EYEBROW": "O QUE FAZ A DIFERENÇA",
+    "S6_TITLE": "Três pilares que <em>salvam vidas.</em>",
+    "S6_ITEM1": "→ Pré-natal rigoroso — acompanhamento regular desde a descoberta da gravidez",
+    "S6_ITEM2": "→ Maternidades preparadas — UTIs neonatais e equipes treinadas para alto risco",
+    "S6_ITEM3": "→ Enfermagem qualificada — profissionais atentos aos primeiros sinais de complicação",
+
+    "S7_EYEBROW": "COMPARTILHE ESSA INFORMAÇÃO",
+    "S7_TITLE": "Informação que <em>salva vidas.</em>",
+    "S7_BODY": "Curta, salve e compartilhe com quem você conhece. Quanto mais pessoas souberem, mais vidas podemos proteger juntos.",
+    "S7_CTA": "Siga @sindicato.satebaurueregiao no Instagram e Facebook. Acesse sindicatosate.com.br"
+  }
+}
